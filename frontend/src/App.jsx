@@ -15,7 +15,6 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
-      Hello world
     </>
   );
 }
