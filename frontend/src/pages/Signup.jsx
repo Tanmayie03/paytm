@@ -15,9 +15,9 @@ export const Signup = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex justify-center h-screen bg-slate-300">
+    <div className="flex justify-center h-screen bg-slate-200">
       <div className="flex flex-col justify-center">
-        <div className="p-2 px-4 text-center bg-white rounded-lg w-96 h-max">
+        <div className="px-6 py-4 text-center bg-white rounded-lg w-96 h-max">
           <Heading label={"Sign up"} />
           <SubHeading label={"Enter your infromation to create an account"} />
           <InputBox

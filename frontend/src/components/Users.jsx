@@ -25,7 +25,7 @@ export const Users = () => {
             setFilter(e.target.value);
           }}
           placeholder="Search users..."
-          className="w-full px-2 py-1 border rounded border-slate-200"></input>
+          className="w-full p-2 capitalize border rounded outline-none border-slate-200"></input>
       </div>
       <div>
         {users.map((user) => (
@@ -39,16 +39,16 @@ export const Users = () => {
 function User({ user }) {
   const navigate = useNavigate();
   return (
-    <div className="flex justify-between">
-      <div className="flex">
-        <div className="flex justify-center w-12 h-12 mt-1 mr-2 font-semibold capitalize bg-green-200 rounded-full">
+    <div className="flex items-center justify-between p-2 rounded hover:bg-slate-100">
+      <div className="flex items-center">
+        <div className="flex justify-center w-12 h-12 mr-2 font-semibold capitalize bg-green-200 rounded-full">
           <div className="flex flex-col justify-center h-full text-xl ">
             {user.firstName[0]}
           </div>
         </div>
         <div className="flex flex-col justify-center font-semibold h-ful">
-          <div>
-            {user.firstName} {user.lastName}
+          <div className="">
+            <span className="capitalize">{user.firstName}</span> {user.lastName}
           </div>
         </div>
       </div>

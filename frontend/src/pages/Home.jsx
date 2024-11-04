@@ -22,9 +22,7 @@ const Home = () => {
         </div>
       </header>
       <main className="flex flex-col items-center justify-center flex-grow px-4 text-center bg-slate-200">
-        <h1 className="mb-2 text-2xl font-semibold">
-          Welcome to Payment's App
-        </h1>
+        <h1 className="mb-2 text-2xl font-semibold">Welcome to PayTM App</h1>
         <p className="mb-4 text-lg">
           A safe and secure way to transfer your hard-earned money.
         </p>
