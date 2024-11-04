@@ -17,7 +17,7 @@ export const Users = () => {
 
   return (
     <>
-      <div className="font-bold mt-6 text-lg">Users</div>
+      <div className="mt-6 text-lg font-bold">Users</div>
       <div className="my-2">
         <input
           type="text"
@@ -41,12 +41,12 @@ function User({ user }) {
   return (
     <div className="flex justify-between">
       <div className="flex">
-        <div className="rounded-full h-12 w-12 bg-slate-200 flex justify-center mt-1 mr-2">
-          <div className="flex flex-col justify-center h-full text-xl">
+        <div className="flex justify-center w-12 h-12 mt-1 mr-2 font-semibold capitalize bg-green-200 rounded-full">
+          <div className="flex flex-col justify-center h-full text-xl ">
             {user.firstName[0]}
           </div>
         </div>
-        <div className="flex flex-col justify-center h-ful">
+        <div className="flex flex-col justify-center font-semibold h-ful">
           <div>
             {user.firstName} {user.lastName}
           </div>

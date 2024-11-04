@@ -3,37 +3,37 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const navigate = useNavigate();
   return (
-    <div className="h-screen flex flex-col">
-      <header className="w-full flex justify-between items-center shadow px-4 sm:px-14 py-4 bg-white">
-        <div className="text-xl sm:text-2xl font-bold text-blue-600">
-          Payments App
+    <div className="flex flex-col h-screen">
+      <header className="flex items-center justify-between w-full px-4 py-4 bg-white shadow sm:px-14">
+        <div className="text-xl font-bold text-green-600 sm:text-2xl">
+          PayTM App
         </div>
-        <div className="flex justify-between items-center gap-2">
+        <div className="flex items-center justify-between gap-2">
           <button
             onClick={() => navigate("/signup")}
-            className="rounded-md bg-blue-500 hover:bg-blue-600 text-white border border-blue-700 py-2 font-medium px-5 hover:cursor-pointer focus:outline-none">
+            className="px-5 py-2 font-medium text-white bg-green-500 border rounded hover:bg-green-600 ">
             Signup
           </button>
           <button
             onClick={() => navigate("/signin")}
-            className="rounded-md bg-blue-500 hover:bg-blue-600 text-white border border-blue-700 py-2 font-medium px-5 hover:cursor-pointer focus:outline-none">
+            className="px-5 py-2 font-medium text-white bg-green-500 border rounded hover:bg-green-600 ">
             Signin
           </button>
         </div>
       </header>
-      <main className="flex-grow bg-slate-300 flex flex-col justify-center items-center text-center px-4">
-        <h1 className="font-semibold text-2xl mb-2">
+      <main className="flex flex-col items-center justify-center flex-grow px-4 text-center bg-slate-200">
+        <h1 className="mb-2 text-2xl font-semibold">
           Welcome to Payment's App
         </h1>
-        <p className="text-lg mb-4">
+        <p className="mb-4 text-lg">
           A safe and secure way to transfer your hard-earned money.
         </p>
-        <p className="text-base mb-4">
+        <p className="mb-4 text-base">
           With our app, you can easily manage your finances, track your
           spending, and make transactions with just a few clicks.
         </p>
       </main>
-      <footer className="w-full bg-white py-4 flex justify-center items-center shadow-inner">
+      <footer className="flex items-center justify-center w-full py-4 bg-white shadow-inner">
         <div className="text-sm text-gray-500">
           © 2024 Payments App. All rights reserved.
         </div>
